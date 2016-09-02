@@ -1,0 +1,16 @@
+{
+  "name": "aestheticbot",
+  "version": "0.1.0",
+  "description": "Create Tumblr photo posts right from Slack.",
+  "author": {
+    "name": "Amelia Gapin"
+  },
+  "main": "bot.js",
+  "dependencies": {
+    "botkit": "^0.1.1",
+    "request": "2.71.0",
+    "tumblr.js": "^1.1.0",
+    "valid-url": "^1.0.9",
+    "winston": "^2.2.0"
+  }
+}
