@@ -32,17 +32,29 @@ module.exports = {
         blog: 'channelaesthetic',
 
         // A `null` trigger is allowed for up to one post type.
-        post_types: {
-            photo: {
+        action: {
+            GIF: {
+                enabled: false, // not implemented
+                trigger: 'gif',
+            },
+            PHOTO: {
                 enabled: true,
                 trigger: 'photo',
 
                 // Enable photo search engines
                 search: {
-                    giphy: true,
-                    tumblr: true,
+                    giphy: false,
+                    tumblr: false,
                 },
-            }
+            },
+            TEXT: {
+                enabled: true,
+                trigger: 'text',
+            },
+            TRENDING: {
+                enabled: false, // not implemented
+                trigger: 'trending',
+            },
         }
     },
 };
